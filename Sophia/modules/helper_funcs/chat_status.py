@@ -2,7 +2,7 @@ from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
 from threading import RLock
-from HexzyBot import (
+from Sophia import (
     DEL_CMDS,
     DEV_USERS,
     DRAGONS,
@@ -366,7 +366,7 @@ def user_can_ban(func):
             and user not in [777000, 1087968824]
         ):
             update.effective_message.reply_text(
-                "😹 Sorry You can't do that"
+                " 😥 Sorry You can't do that"
             )
             return ""
         return func(update, context, *args, **kwargs)
@@ -402,6 +402,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from HexzyBot.modules import connection
+from Sophia.modules import connection
 
 connected = connection.connected
