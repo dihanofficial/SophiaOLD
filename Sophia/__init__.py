@@ -84,7 +84,7 @@ if ENV:
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", False))
     WORKERS = int(os.environ.get("WORKERS", 8))
-    BAN_STICKER = os.environ.get("BAN_STICKER", "")
+    BAN_STICKER = os.environ.get("BAN_STICKER", "CAADAgADOwADPPEcAXkko5EB3YGYAg")
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
@@ -103,7 +103,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from HexzyBot.config import Development as Config
+    from Sophia.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -193,7 +193,7 @@ else:
 aiohttpsession = ClientSession()
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Sophia", API_ID, API_HASH)
-pbot = Client("SophiaSLBot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+pbot = Client("Sophiapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -202,8 +202,8 @@ WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
-
-from Sophia.modules.helper_funcs.handlers import (
+# Load at end to ensure all prev variables have been set
+from AnkiVector.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
