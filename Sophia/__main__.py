@@ -26,6 +26,9 @@ from Sophia import (
     updater,
 )
 
+# needed to dynamically load modules
+# NOTE: Module order is not guaranteed, specify that in the config file!
+
 from Sophia.modules import ALL_MODULES
 from Sophia.modules.helper_funcs.chat_status import is_user_admin
 from Sophia.modules.helper_funcs.misc import paginate_modules
