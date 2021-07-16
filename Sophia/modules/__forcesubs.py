@@ -195,15 +195,5 @@ __help__ = """
  ~ /fsub clear - To unmute all members who muted by me.
 """
 __mod_name__ = "💞F-Sub💞 "
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
+
