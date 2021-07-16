@@ -402,6 +402,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from Sophiat.modules import connection
+from Sophia.modules import connection
 
 connected = connection.connected
