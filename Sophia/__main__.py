@@ -79,8 +79,6 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-    await message.reply_sticker("CAACAgUAAxkBAAIiiWDruoLr95wK1YWV_n_l8yM-LTyFAAIVAwACXIehVt6qg0Y3TVbwHgQ")
-    await message.reply_text(
 Hello, \n I'm 𝙎𝙤𝙥𝙝𝙞𝙖
 \n\nI am a next gen powerful group manager bot.\n\nHit /help to find my list of available commands.
 """
