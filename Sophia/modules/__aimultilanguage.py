@@ -14,7 +14,7 @@ from pyrogram import filters
 from Sophia import BOT_ID
 from Sophia.helper_extra.aichat import add_chat, get_session, remove_chat
 from Sophia.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from Sophia import pbot as hexzy
+from Sophia import pbot as Sophia
 
 translator = google_translator()
 import requests
