@@ -7,7 +7,7 @@ from Sophia import pbot as Prabha_sha
 from Sophia.pyrogramee.dark import get_arg
 
 
-@Prabha_sha.on_message(filters.command("saavn"))
+@dihanrandila1.on_message(filters.command("saavn"))
 async def song(client, message):
     message.chat.id
     message.from_user["id"]
@@ -40,7 +40,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from HexzyBot import pbot as Hexzy
+from Sophia import pbot as Sophia
 
 ARQ = "https://thearq.tech/"
 
@@ -54,7 +54,7 @@ async def fetch(url):
     return data
 
 async def download_song(url):
-    song_name = f"Hexzy.mp3"
+    song_name = f"Sophia.mp3"
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as resp:
             if resp.status == 200:
@@ -64,7 +64,7 @@ async def download_song(url):
     return song_name
 
 
-@Hexzy.on_message(filters.command("deezer"))
+@Sophia.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Download Now Deezer")
@@ -87,14 +87,13 @@ async def deezer(_, message):
     os.remove(song)
     await m.delete()
 
-#Deezer
-# Credits for @TheHamkerCat
+
 
 import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from HexzyBot import pbot as CHABEE
+from Sophia import pbot as CHABEE
 
 ARQ = "https://thearq.tech/"
 
