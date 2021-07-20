@@ -3,7 +3,7 @@ import logging
 from pyrogram import Client
 
 # from pyromod import listen
-from HexzyBot.conf import get_int_key, get_str_key
+from Sophia.conf import get_int_key, get_str_key
 
 TOKEN = get_str_key("TOKEN", required=True)
 API_ID = get_int_key("API_ID", required=True)
