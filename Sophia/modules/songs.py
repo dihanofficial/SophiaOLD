@@ -3,8 +3,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from Sophia import pbot as Prabha_sha
-from Sophia.pyrogramee.dark import get_arg
+from Sophia import pbot as Sophia
+from Sophia.Best_Of_Sophia.dark import get_arg
 
 
 @dihanrandila1.on_message(filters.command("saavn"))
