@@ -16,7 +16,7 @@ from Sophia import BOT_ID
 from Sophia.conf import get_int_key, get_str_key
 
 
-from Sophia.pyrogramee.telethonbasics import is_admin
+from Sophia.Best_of_Sophia.telethonbasics import is_admin
 from Sophia.events import register
 from Sophia import MONGO_DB_URI 
 from pymongo import MongoClient
