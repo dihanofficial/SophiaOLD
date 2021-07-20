@@ -20,8 +20,8 @@
 
 from pyrogram import filters
 
-from Sophia.pyrogramee.pluginshelper import admins_only
-from Sophia.pyrogramee.pyrogram import pbot as app
+from Sophia.Best_Of_Sophia.pluginshelper import admins_only
+from Sophia.Best_Of_Sophia.pyrogram import pbot as app
 
 
 @app.on_message(filters.command("webss") & ~filters.private & ~filters.edited)
