@@ -362,4 +362,4 @@ __help__ = """
  
 """
 
-__mod_name__ = "💞Chatbot💞"
+__mod_name__ = "💞AI Assistant💞"
