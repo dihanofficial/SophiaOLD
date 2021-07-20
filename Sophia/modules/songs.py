@@ -7,7 +7,7 @@ from Sophia import pbot as Sophia
 from Sophia.Best_Of_Sophia.dark import get_arg
 
 
-@sophia.on_message(filters.command("saavn"))
+@Sophia.on_message(filters.command("saavn"))
 async def song(client, message):
     message.chat.id
     message.from_user["id"]
