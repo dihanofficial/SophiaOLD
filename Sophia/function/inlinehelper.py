@@ -23,7 +23,7 @@ from Sophia import BOT_USERNAME, OWNER_ID
 from Sophia.config import get_str_key
 from Sophia.function.pluginhelpers import convert_seconds_to_minutes as time_convert
 from Sophia.function.pluginhelpers import fetch
-from Sophia.services.pyrogram import pbot
+from Sophia.Best_Of_Sophia.pyrogram import pbot
 
 ARQ_API = get_str_key("ARQ_API", required=True)
 ARQ_API_KEY = ARQ_API
