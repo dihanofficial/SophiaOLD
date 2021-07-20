@@ -1,5 +1,5 @@
 import os
-from HexzyBot import telethn as tbot
+from Sophia import telethn as tbot
 from geopy.geocoders import Nominatim
 from Sophia.events import register
 from Sophia import *
