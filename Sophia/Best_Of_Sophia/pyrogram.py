@@ -2,8 +2,8 @@ import logging
 
 from pyrogram import Client
 
-from Sophia.conf import get_int_key
-from Sophia.conf import get_str_key
+# from pyromod import listen
+from HexzyBot.conf import get_int_key, get_str_key
 
 TOKEN = get_str_key("TOKEN", required=True)
 API_ID = get_int_key("API_ID", required=True)
@@ -16,7 +16,7 @@ Hxy = Client(
     bot_token=TOKEN,
 )
 
-
+# disable logging for pyrogram [not for ERROR logging]
 logging.getLogger("pyrogram").setLevel(level=logging.ERROR)
 
 Hxy.start()
