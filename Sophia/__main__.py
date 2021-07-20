@@ -76,9 +76,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-Hello, \n I'M Sophia
+  await message.reply_sticker("CAACAgIAAxkBAAEDF6Rgrcl1kZNSrAABqO7L-kVd4tWK48MAAi0BAAIw1J0REIYEuS-exNEeBA")
+    await message.reply_text(
+ Hello, \n I'M Sophia 
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ[️️ ️]()ɢʀᴏᴜᴘꜱ! ʜɪᴛ /help
-Maintained by @dihanrandila ❤
+Maintained by 
 """
 
 buttons = [
