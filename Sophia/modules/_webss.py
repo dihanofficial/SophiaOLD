@@ -21,10 +21,10 @@
 from pyrogram import filters
 
 from Sophia.Best_Of_Sophia.pluginshelper import admins_only
-from Sophia.Best_Of_Sophia.pyrogram import pbot as app
+from Sophia.Best_Of_Sophia.pyrogram import pbot as sophia
 
 
-@app.on_message(filters.command("webss") & ~filters.private & ~filters.edited)
+@Sophia.on_message(filters.command("webss") & ~filters.private & ~filters.edited)
 @admins_only
 async def take_ss(_, message):
     if len(message.command) != 2:
