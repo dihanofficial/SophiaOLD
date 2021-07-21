@@ -63,10 +63,6 @@ def get_int_key(name, required=False):
         return data
 
 
-
-
-
-
 def get_str_key(name, required=False):
     if name in DEFAULTS:
         default = DEFAULTS[name]
