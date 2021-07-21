@@ -1,4 +1,4 @@
-from Sophia.mongo import mongodb as db_x
+from Sophia.etc.mongo import mongodb as db_x
 
 lydia = db_x["CAHTBOT"]
 
