@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from telethon import events
 from telethon.tl import functions, types
 
-from Sophia.etc.telethon import tbot
+from Sophia.Best_Of_Sophia.telethonbasics import Sophia
 
 
 async def is_register_admin(chat, user):
