@@ -32,7 +32,7 @@ from Sophia import BOT_ID
 from Sophia.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
 from Sophia.function.inlinehelper import arq
 from Sophia.function.pluginhelpers import admins_only, edit_or_reply
-from Sophia.Best_Of_Sophia.pyrogram import pbot as Sophia
+from Sophia.etc.pyrogram import pbot as Sophia
 
 translator = google_translator()
 
