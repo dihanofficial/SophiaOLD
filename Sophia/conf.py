@@ -1,6 +1,6 @@
 import sys
 from envparse import env
-from HexzyBot import LOGGER
+from Sophia import LOGGER
 
 
 DEFAULTS = {
