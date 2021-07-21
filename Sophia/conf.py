@@ -1,11 +1,39 @@
+import os
+
+import yaml
+
 import sys
 from envparse import env
 from Sophia import LOGGER
-
+from Sophia.utils.logger import log
 
 DEFAULTS = {
     "LOAD_MODULES": True,
+    "DEBUG_MODE": True,
+    "REDIS_HOST": "localhost",
+    "REDIS_PORT": 6379,
+    "REDIS_DB_FSM": 1,
+    "MONGODB_URI": "localhost",
+    "MONGO_DB": "Sophia",
+    "API_PORT": 8080,
+    "JOIN_CONFIRM_DURATION": "30m",
 }
+
+CONFIG_PATH = "data/bot_conf.yaml"
+if os.name == "nt":
+    log.debug("Detected Windows, changing config path...")
+    CONFIG_PATH = os.getcwd() + "\\data\\bot_conf.yaml"
+
+if os.path.isfile(CONFIG_PATH):
+    log.info(CONFIG_PATH)
+    for item in (
+        data := yaml.load(open("data/bot_conf.yaml", "r"), Loader=yaml.CLoader)
+    ):
+        DEFAULTS[item.upper()] = data[item]
+else:
+    log.info("Using env vars")
+
+
 
 def get_str_key(name, required=False):
     if name in DEFAULTS:
