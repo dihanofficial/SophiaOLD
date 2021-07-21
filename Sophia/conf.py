@@ -1,6 +1,5 @@
 import os
 
-import yaml
 
 import sys
 from envparse import env
