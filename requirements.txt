@@ -1,5 +1,5 @@
-
-
+aioredis
+aiogram
 
 
 
