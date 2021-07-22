@@ -1,6 +1,5 @@
 aioredis
 aiogram
-yaml
 config
 
 future
