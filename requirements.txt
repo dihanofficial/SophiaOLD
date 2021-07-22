@@ -1,7 +1,7 @@
 aioredis
 aiogram
 
-
+Sophia.config
 
 future
 emoji
