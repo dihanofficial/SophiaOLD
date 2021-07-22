@@ -127,24 +127,6 @@ gogoanime-api
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-aioredis
-aiogram
 future
 emoji
 lxml
