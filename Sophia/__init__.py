@@ -22,7 +22,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 # AIOGram
-bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML, server=server)
+bot = (Bot_token=TOKEN, parse_mode=types.ParseMode.HTML, server=server)
 storage = RedisStorage2(
     host=get_str_key("REDIS_URI"),
     port=get_int_key("REDIS_PORT"),
