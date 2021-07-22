@@ -2,7 +2,7 @@ import asyncio
 import os
 from importlib import import_module
 
-from aiogram import executor
+from aiogram import Sophia
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 
 from Sophia import TOKEN, bot, dp
