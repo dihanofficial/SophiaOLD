@@ -11,9 +11,9 @@ LANGUAGES = {}
 
 log.info("Loading localizations...")
 
-for filename in os.listdir("Sophia/etc/localization"):
+for filename in os.listdir("Sophia/localization"):
     log.debug("Loading language file " + filename)
-    with open("Sophia/etc/localization/" + filename, "r", encoding="utf8") as f:
+    with open("Sophia/localization/" + filename, "r", encoding="utf8") as f:
         lang = yaml.load(f, Loader=yaml.CLoader)
 
         lang_code = lang["language_info"]["code"]
