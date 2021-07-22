@@ -2,9 +2,6 @@ import asyncio
 import os
 from importlib import import_module
 
-
-
-from Sophia import TOKEN, dp
 from Sophia.config import get_bool_key, get_list_key
 from Sophia.modules import ALL_MODULES, LOADED_MODULES, MOD_HELP
 from Sophia.utils.logger import log
