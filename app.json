@@ -75,6 +75,21 @@
          "required": true,
          "value": "SophiaX_Support"
       },
+      "REDIS_URI": {
+      "description": "Get from redislabs.com",
+      "value": "",
+      "required": true
+    },
+    "REDIS_PORT": {
+      "description": "Get from redislabs.com",
+      "value": "",
+      "required": true
+    },
+    "REDIS_PASS": {
+      "description": "Get from redislabs.com",
+      "value": "",
+      "required": true
+    },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
