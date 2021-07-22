@@ -4,6 +4,12 @@ import sys
 import time
 import spamwatch
 
+from aiogram import Bot, Dispatcher, types
+from aiogram.bot.api import TELEGRAM_PRODUCTION, TelegramAPIServer
+from aiogram.contrib.fsm_storage.redis import RedisStorage2
+
+
+
 import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
@@ -22,7 +28,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 # AIOGram
-bot = (Bot_token=TOKEN, parse_mode=types.ParseMode.HTML, server=server)
+bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML, server=server)
 storage = RedisStorage2(
     host=get_str_key("REDIS_URI"),
     port=get_int_key("REDIS_PORT"),
