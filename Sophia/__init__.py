@@ -7,7 +7,7 @@ from aiogram.bot.api import TELEGRAM_PRODUCTION, TelegramAPIServer
 from aiogram.contrib.fsm_storage.redis import RedisStorage2
 
 from Sophia.config import get_bool_key, get_int_key, get_list_key, get_str_key
-from Sophia.services.telethon import tbot
+from Sophia.etc.telethon import tbot
 from Sophia.utils.logger import log
 from Sophia.versions import SOPHIA_VERSION
 
