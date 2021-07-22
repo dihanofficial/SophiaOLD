@@ -20,6 +20,27 @@ logging.basicConfig(
 
 LOGGER = logging.getLogger(__name__)
 
+
+# AIOGram
+bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML, server=server)
+storage = RedisStorage2(
+    host=get_str_key("REDIS_URI"),
+    port=get_int_key("REDIS_PORT"),
+    password=get_str_key("REDIS_PASS"),
+)
+dp = Dispatcher(bot, storage=storage)
+
+loop = asyncio.get_event_loop()
+SUPPORT_CHAT = get_str_key("SUPPORT_CHAT", required=True)
+log.debug("Getting bot info...")
+bot_info = loop.run_until_complete(bot.get_me())
+BOT_USERNAME = bot_info.username
+BOT_ID = bot_info.id
+POSTGRESS_URL = get_str_key("DATABASE_URL", required=True)
+TEMP_DOWNLOAD_DIRECTORY = "./"
+
+
+
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     LOGGER.error(
