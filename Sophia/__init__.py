@@ -4,7 +4,7 @@ import sys
 import time
 import spamwatch
 
-from aiogram import Bot, Dispatcher, types
+
 from aiogram.bot.api import TELEGRAM_PRODUCTION, TelegramAPIServer
 from aiogram.contrib.fsm_storage.redis import RedisStorage2
 
