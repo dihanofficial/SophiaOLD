@@ -1,1 +1,0 @@
-SOPHIA_VERSION = "v2-H4.0"
