@@ -1,7 +1,4 @@
-aioredis
-aiogram
 
-yaml
 future
 emoji
 lxml
