@@ -344,6 +344,10 @@ def goodmorning(update, context):
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
     
 
+
+
+
+
 __help__ = """
  - /runs*:* reply a random string from an array of replies
  - /slap*:* slap a user, or get slapped if not a reply
