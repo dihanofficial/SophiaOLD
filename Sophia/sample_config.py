@@ -1,3 +1,4 @@
+# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 import json
 import os
 
@@ -7,17 +8,18 @@ def get_user_list(config, key):
         return json.load(json_file)[key]
 
 
-
+# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
     LOGGER = True
+    # REQUIRED
+    # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-
-    API_ID = 123456 
-    API_HASH = ""
-    TOKEN = "BOT_TOKEN" 
-    OWNER_ID = 797768146 
-    OWNER_USERNAME = "dihanrandila" 
-    SUPPORT_CHAT = "SophiaX_Support"  # Your own group for support, do not add the @
+    API_ID = 123456  # integer value, dont use ""
+    API_HASH = "awoo"
+    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 797768146  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "Dihanrandila" 
+    SUPPORT_CHAT = "Dihan_Official"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001392103597
     )  # Prints any new group the bot is added to, prints just the name and ID.
