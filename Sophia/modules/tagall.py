@@ -5,7 +5,7 @@
 from pyrogram import filters
 
 from Sophia.Best_Of_Sophia.pluginshelper import admins_only, get_text
-from HexzyBot import pbot
+from Sophia import pbot
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
