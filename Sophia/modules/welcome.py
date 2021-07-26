@@ -7,7 +7,7 @@ from contextlib import suppress
 
 import Sophia.modules.sql.welcome_sql as sql
 import Sophia
-from HexzyBot import (
+from Sophia import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
