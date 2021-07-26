@@ -464,10 +464,10 @@ __help__ = """
  - /lined <text>: lined your text!
 
 By @SophiaSLBot
+SPEACIAL THANKS SABER
 """
 __mod_name__ = "💞StyleText💞"
 
-WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble)
 FBUBBLE_HANDLER = DisableAbleCommandHandler("fbubble", fbubble)
 SQUARE_HANDLER = DisableAbleCommandHandler("square", square)
@@ -476,7 +476,7 @@ BLUE_HANDLER = DisableAbleCommandHandler("blue", blue)
 LATIN_HANDLER = DisableAbleCommandHandler("latin", latin)
 LINED_HANDLER = DisableAbleCommandHandler("lined", lined)
 
-dispatcher.add_handler(WEEBIFY_HANDLER)
+
 dispatcher.add_handler(BUBBLE_HANDLER)
 dispatcher.add_handler(FBUBBLE_HANDLER)
 dispatcher.add_handler(SQUARE_HANDLER)
@@ -485,7 +485,7 @@ dispatcher.add_handler(BLUE_HANDLER)
 dispatcher.add_handler(LATIN_HANDLER)
 dispatcher.add_handler(LINED_HANDLER)
 
-__command_list__ = ["weebify"]
+
 __command_list__ = ["bubble"]
 __command_list__ = ["fbubble"]
 __command_list__ = ["square"]
@@ -493,7 +493,6 @@ __command_list__ = ["fsquare"]
 __command_list__ = ["blue"]
 __command_list__ = ["latin"]
 __command_list__ = ["lined"]
-__handlers__ = [WEEBIFY_HANDLER]
 __handlers__ = [BUBBLE_HANDLER]
 __handlers__ = [FBUBBLE_HANDLER]
 __handlers__ = [SQUARE_HANDLER]
