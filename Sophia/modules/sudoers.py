@@ -45,23 +45,23 @@ DISK: {disk}%
 """
     return stats
 
-@pbot.on_message(
-    filters.command("broadcast") & filters.user(DEV_USERS) & ~filters.edited
-)
-@capture_err
-async def broadcast_message(_, message):
-    if len(message.command) < 2:
-        return await message.reply_text("**Usage**:\n/broadcast [MESSAGE]")
-    text = message.text.split(None, 1)[1]
-    sent = 0
-    chats = []
-    schats = await get_served_chats()
-    for chat in schats:
-        chats.append(int(chat["chat_id"]))
-    for i in chats:
-        try:
-            await app.send_message(i, text=text)
-            sent += 1
-        except Exception:
-            pass
-    await message.reply_text(f"**Broadcasted Message In {sent} Chats.**")
+#@pbot.on_message(
+#    filters.command("broadcast") & filters.user(DEV_USERS) & ~filters.edited
+#)
+#@capture_err
+#async def broadcast_message(_, message):
+#    if len(message.command) < 2:
+#        return await message.reply_text("**Usage**:\n/broadcast [MESSAGE]")
+#    text = message.text.split(None, 1)[1]
+#    sent = 0
+#    chats = []
+#    schats = await get_served_chats()
+#    for chat in schats:
+#        chats.append(int(chat["chat_id"]))
+#    for i in chats:
+#        try:
+#            await app.send_message(i, text=text)
+#            sent += 1
+#        except Exception:
+#            pass
+#    await message.reply_text(f"**Broadcasted Message In {sent} Chats.**")
