@@ -10,7 +10,7 @@
          "manager",
          "Sophia"
       ],   
-   "repository": "https://github.com/dihanrandila/Sophia",
+   "repository": "https://github.com/dihanofficial/sophia",
    "addons": [
       {
          "options": {
@@ -29,7 +29,7 @@
   ],  
    "env": {
       "TOKEN": {
-         "description": "Your bot token. Get one from @BotFather ",
+         "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
          "value": ""
       },
@@ -68,28 +68,13 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "dihanrandila"
+         "value": "Dihanrandila"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "SophiaX_Support"
+         "value": "Dihan_Official"
       },
-      "REDIS_URI": {
-      "description": "Get from redislabs.com",
-      "value": "",
-      "required": true
-    },
-    "REDIS_PORT": {
-      "description": "Get from redislabs.com",
-      "value": "",
-      "required": true
-    },
-    "REDIS_PASS": {
-      "description": "Get from redislabs.com",
-      "value": "",
-      "required": true
-    },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
@@ -131,7 +116,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "1725052009"
+         "value": ""
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
