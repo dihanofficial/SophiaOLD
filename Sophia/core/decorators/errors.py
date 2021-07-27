@@ -1,6 +1,7 @@
 
   
-""" WRITTEN BY @DihanRandila, https://github.com/Dihanrandila1"""
+""
+" WRITTEN BY @DihanRandila, https://github.com/Dihanrandila1"""
 
 import sys
 import traceback
