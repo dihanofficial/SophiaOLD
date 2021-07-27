@@ -24,6 +24,7 @@ import Sophia.modules.sql.locks_sql as locksql
 from Sophia.modules.connection import connected
 
 
+
 @run_async
 @user_admin
 @typing_action
