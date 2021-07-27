@@ -228,7 +228,10 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Hey there! My name is Sophia. Join My Updates @DihanOfficial"
+            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+                uptime
+            ),
+            parse_mode=ParseMode.HTML,
         )
 
 
@@ -356,11 +359,6 @@ def help_button(update, context):
 
 
 
-
-@pbot.on_callback_query(filters.regex("stats_callback"))
-async def stats_callbacc(_, CallbackQuery):
-    text = await bot_sys_stats()
-    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
     
 
 @run_async
@@ -638,7 +636,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 💞 ")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive ❤")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -654,7 +652,6 @@ def main():
 
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
-
 
 
     donate_handler = CommandHandler("donate", donate)
