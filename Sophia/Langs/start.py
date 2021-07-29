@@ -1,6 +1,6 @@
- __lang__ = "en"
+ __lang__ = "start"
 
-en = { 
+start = { 
 
   # __main__
 "start_text": """
