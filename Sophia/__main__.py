@@ -132,9 +132,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),
-    ],
+    ]
 ]
-]
+
 
 HELP_STRINGS = """
 [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg) 
