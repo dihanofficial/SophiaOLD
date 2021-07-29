@@ -1,21 +1,3 @@
-import os
-import telegram
-import importlib
-
-
-from telegram import  User, CallbackQuery
-from telegram import Message, Chat, Bot
-from telegram.error import BadRequest
-from telegram.ext import CommandHandler, run_async, DispatcherHandlerStop, MessageHandler, Filters, CallbackQueryHandler
-from Sophia import dispatcher, spamcheck, LOGGER
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.chat_status import user_admin_no_reply, user_admin
-
-from Sophia.modules.sql import languages_sql as sql
-from Sophia.modules.helper_funcs.alternate import send_message
-
-
-
 
 
 import importlib
