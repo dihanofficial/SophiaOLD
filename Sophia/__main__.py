@@ -1,3 +1,23 @@
+import os
+import telegram
+import importlib
+
+
+from telegram import  User, CallbackQuery
+from telegram import Message, Chat, Bot
+from telegram.error import BadRequest
+from telegram.ext import CommandHandler, run_async, DispatcherHandlerStop, MessageHandler, Filters, CallbackQueryHandler
+from Sophia import dispatcher, spamcheck, LOGGER
+from Sophia.modules.disable import DisableAbleCommandHandler
+from Sophia.modules.helper_funcs.chat_status import user_admin_no_reply, user_admin
+
+from Sophia.modules.sql import languages_sql as sql
+from Sophia.modules.helper_funcs.alternate import send_message
+
+
+
+
+
 import importlib
 import time
 import re
@@ -75,6 +95,11 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
+STICKERS = (
+    "CAACAgUAAxkBAAJOGmBeli95P073FKVkgc4esfKE4UlXAAIOAgACyavAVkbLMIidWYdyHgQ"
+)
+
+
 PM_START_TEXT = f"""
 Hey there! My name is Sophia.
 I can help manage your groups with useful features, feel free to add me to your Groups!  *Hit /help 
@@ -109,10 +134,10 @@ buttons = [
         InlineKeyboardButton(text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),
     ],
 ]
-
+]
 
 HELP_STRINGS = """
-`[️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg) 
+[️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg) 
 Hi Boss! I'm Sophia. An anime themed Super Powerful group management bot with many handy tools. So why are you waiting. Let me to assist you. `Powerted By @dihanofficial"""
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
