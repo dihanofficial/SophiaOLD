@@ -1,6 +1,7 @@
 import os
 
-from Sophia.Best_Of_Sophia.pyrogram import pbot
+from Sophia import telethn as tbot
+from Sophia.Best_Of_Sophia.pyrogram import Sophia as Client
 
 from Sophia.Best_Of_Sophia.pluginhelpers import edit_or_reply
 
