@@ -42,7 +42,7 @@ STICKERS = (
 
 @register(cmds="start", no_args=True, only_groups=True)
 @disableable_dec("start")
-@get_strings_dec("pm_menu")
+@get_strings_dec("start")
 async def start_group_cmd(message, strings):
     await message.reply(strings["start_hi_group"])
 
@@ -53,7 +53,7 @@ async def start_cmd(message):
     await get_start_func(message)
 
 
-@get_strings_dec("pm_menu")
+@get_strings_dec("start")
 async def get_start_func(message, strings, edit=False):
     msg = message.message if hasattr(message, "message") else message
 
