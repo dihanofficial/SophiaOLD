@@ -425,10 +425,7 @@ def Sophia_info_callback(update, context):
     query = update.callback_query
     if query.data == "info_":
         query.message.edit_text(
-            text=f" I'm *Sophia*, a powerful group management bot built to help you manage your group easily. \n\n  Powerted by @DihanOfficial.* "
-            f"\n\n Join [My Updates 🙋‍♀️] (https://t.me/dihanofficial) & [Support 💬] (https://t.me/dihan_official) ❤ "
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)"
-            f"\n\n My [💾 Source Code](https://github.com/dihanofficial/sophia) 😍 ",
+            text=f" I'm *Sophia*, a powerful group management bot built to help you manage your group easily. \n\n  Powerted by @DihanOfficial.* ",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -447,9 +444,6 @@ def Sophia_info_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-
-
-
 
 
 
