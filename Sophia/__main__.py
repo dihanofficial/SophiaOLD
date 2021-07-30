@@ -425,26 +425,10 @@ def Sophia_info_callback(update, context):
     query = update.callback_query
     if query.data == "info_":
         query.message.edit_text(
-            text="" I'm *Sophia*, a Powerful Group Management Bot built to Help you manage your group Easily.
-
-                 f"\n\n* I can restrict users.
-
-                 f"\n\n* I can greet users with customizable welcome messages and even set a group's rules.
-
-                 f"\n\n* I have an advanced anti-flood system.
-
-                 f"\n\n* I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-
-                 f"\n\n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-
-                 f"\n\n* I check for admins' permissions before executing any command and more stuffs
-
-                 f"\n\n  Sophia's licensed under the GNU General Public License v3.0
-
-                 f"\n\n - Support Group @Dihan_Official
-                 f"\n\n - Assistant @SophiaXMusic.
-
-                f"\n\n If you have any question about Sophia, let us know at .""",
+            text=f" I'm *Sophia*, a powerful group management bot built to help you manage your group easily. \n\n  Powerted by @DihanOfficial.* "
+            f"\n\n Join [My Updates 🙋‍♀️] (https://t.me/dihanofficial) & [Support 💬] (https://t.me/dihan_official) ❤ "
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)"
+            f"\n\n My [💾 Source Code](https://github.com/dihanofficial/sophia) 😍 ",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
