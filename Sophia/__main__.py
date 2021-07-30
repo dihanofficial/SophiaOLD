@@ -383,7 +383,7 @@ def Sophia_about_callback(update, context):
     query = update.callback_query
     if query.data == "Sophia_":
         query.message.edit_text(
-            text=f" Info & About
+            text=""" Info & About
             f"\n\n In here you can find what is Sophia and how to set her up
 
             f"\n\n Click buttons for help* "
