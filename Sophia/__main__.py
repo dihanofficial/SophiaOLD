@@ -129,6 +129,16 @@ DATA_EXPORT = []
 CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
+IMPORTED = {}
+MIGRATEABLE = []
+HELPABLE = {}
+STATS = []
+USER_INFO = []
+DATA_IMPORT = []
+DATA_EXPORT = []
+CHAT_SETTINGS = {}
+USER_SETTINGS = {}
+
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("Sophia.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
@@ -358,13 +368,111 @@ def help_button(update, context):
 
 
 
-
 @pbot.on_callback_query(filters.regex("stats_callback"))
 async def stats_callbacc(_, CallbackQuery):
     text = await bot_sys_stats()
     await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
     
     
+
+
+
+
+@run_async
+def Sophia_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "Sophia_":
+        query.message.edit_text(
+            text=f" Info & About
+            f"\n\n In here you can find what is Sophia and how to set her up
+
+            f"\n\n Click buttons for help* "
+            
+            f"\n\n [](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="🙋‍♀️ About Me ", callback_data="info_"
+                        ),
+                        InlineKeyboardButton(
+                            text="💾 Source Code", url=f"https://github.com/dihanofficial"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="❓ Commands Help", callback_data="help_back"
+                        )
+                    ],
+                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
+                ]
+            ),
+        )
+    elif query.data == "Sophia_back":
+        query.message.edit_text(
+            PM_START_TEXT,
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+        )
+
+   
+
+
+
+
+
+
+@run_async
+def Sophia_info_callback(update, context):
+    query = update.callback_query
+    if query.data == "info_":
+        query.message.edit_text(
+            text=""" ℹ️ I'm *Sophia*, a Powerful Group Management Bot built to Help you manage your group Easily.
+
+                 \n* I can restrict users.
+
+                 \n* I can greet users with customizable welcome messages and even set a group's rules.
+
+                 \n* I have an advanced anti-flood system.
+
+                 \n* I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+
+                 \n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+
+                 \n* I check for admins' permissions before executing any command and more stuffs
+
+                 \n\n_LSophia's licensed under the GNU General Public License v3.0_
+
+                 \n- Support Group @Dihan_Official
+                 \n- Assistant @SophiaXMusic.
+                 \n\nIf you have any question about Sophia, let us know at .""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="Sophia_back")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "Sophia_back":
+        query.message.edit_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+        )
+
+
+
+
+
+
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
@@ -658,12 +766,22 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
+    about_callback_handler = CallbackQueryHandler(Sophia_about_callback, pattern=r"Sophia_")
+    source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
+
+   info_callback_handler = CallbackQueryHandler(
+        Sophia_info_callback, pattern=r"info_"
+    )
+
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
+    dispatcher.add_handler(about_callback_handler)
+    dispatcher.add_handler(source_callback_handler)
+    dispatcher.add_handler(info_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
