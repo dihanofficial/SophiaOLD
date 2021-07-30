@@ -721,7 +721,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(hexzy_about_callback, pattern=r"Sophia_")
+    about_callback_handler = CallbackQueryHandler(Sophia_about_callback, pattern=r"Sophia_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
