@@ -104,7 +104,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from HexzyBot.config import Development as Config
+    from Sophia.config import Development as Config
 
     TOKEN = Config.TOKEN
 
