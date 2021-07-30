@@ -425,7 +425,7 @@ def Sophia_info_callback(update, context):
     query = update.callback_query
     if query.data == "info_":
         query.message.edit_text(
-            text="""f"\n\n I'm *Sophia*, a Powerful Group Management Bot built to Help you manage your group Easily.
+            text="" I'm *Sophia*, a Powerful Group Management Bot built to Help you manage your group Easily.
 
                  f"\n\n* I can restrict users.
 
