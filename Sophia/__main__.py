@@ -373,43 +373,61 @@ def Sophia_about_callback(update, context):
     query = update.callback_query
     if query.data == "Sophia_":
         query.message.edit_text(
-            text=""" Info & About
-            \n In here you can find what is Sophia and how to set her up"
-            \n Click buttons for help* "  
-            \n [](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)",
+            text=""" ℹ️ I'm *Sophia*, a powerful group management bot built to help you manage your group easily..
+                 \nMy [💾Repository](https://github.com/Dihanofficial/Sophia).
+                 \n\n  Join My Updates Channel [DihanOfficial] (https://t.me/dihanofficial) 🔥
+                 \n\nI Can Manage Your Groups Smoothly, With Some Special Features [](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
+                 \n\nIf you have any question about Sophia, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="🙋‍♀️ About Me ", callback_data="info_"
-                        ),
-                        InlineKeyboardButton(
-                            text="💾 Source Code", url=f"https://github.com/dihanofficial"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="❓ Commands Help", callback_data="help_back"
-                        )
-                    ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="Sophia_back")
+                 ]
                 ]
             ),
         )
     elif query.data == "Sophia_back":
         query.message.edit_text(
-            PM_START_TEXT,
-            reply_markup=InlineKeyboardMarkup(buttons),
-            parse_mode=ParseMode.MARKDOWN,
-            timeout=60,
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
         )
 
 @pbot.on_callback_query(filters.regex("stats_callback"))
 async def stats_callbacc(_, CallbackQuery):
     text = await bot_sys_stats()
     await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
+    
+    
+@run_async
+def Source_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "source_":
+        query.message.edit_text(
+            text="""  I'm *Sophia*
+                 \nHere is the [Source Code](https://github.com/dihanofficial/Sophia) .""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "source_back":
+        query.message.edit_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+        )
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
@@ -689,7 +707,7 @@ def main():
             dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive ❤")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!"
+                "Bot isnt able to send message to @dihanofficial, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
@@ -703,10 +721,8 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(Sophia_about_callback, pattern=r"Sophia_")
+    about_callback_handler = CallbackQueryHandler(hexzy_about_callback, pattern=r"Sophia_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
-
-
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
