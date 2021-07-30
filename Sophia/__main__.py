@@ -374,9 +374,9 @@ def Sophia_about_callback(update, context):
     if query.data == "Sophia_":
         query.message.edit_text(
             text=""" Info & About
-            f"\n\n In here you can find what is Sophia and how to set her up
-            f"\n\n Click buttons for help* "  
-            f"\n\n [](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)",
+            \n In here you can find what is Sophia and how to set her up"
+            \n Click buttons for help* "  
+            \n [](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
