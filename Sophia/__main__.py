@@ -77,9 +77,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-STICKERS = (
-    "CAACAgUAAxkBAAJOGmBeli95P073FKVkgc4esfKE4UlXAAIOAgACyavAVkbLMIidWYdyHgQ"
-)
+
 
 
 PM_START_TEXT = f"""
@@ -92,29 +90,23 @@ Sophia Updates @dihanofficial
 buttons = [
     [
         InlineKeyboardButton(
-            text="❓ Help", callback_data="help_back"),
+            text="❓ Commands Help ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🙋‍♀️ Sophia Updates", callback_data="t.me/dihanofficial"),
         InlineKeyboardButton(
-            text="🙋‍♂️ Sophia Support", url=f"https://t.me/dihan_official"
+            text="Info & About", callback_data="sophia_"),
+      
+    ],
+    [
+        InlineKeyboardButton(text="🙋‍♀️ Sophia News", url=f"https://t.me/dihanofficial"),
+        InlineKeyboardButton(
+            text="💬 Support Group", url=f"https://t.me/dihan_official"
         ),
     ],
     [
-        InlineKeyboardButton(text="👨‍🔧 Sophia Logs", callback_data="t.me/SophiaX_Updates"),
         InlineKeyboardButton(
-            text="🤴 Developer", url=f"https://t.me/dihanrandila"
-        ),
+            text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),
     ],
-    [
-        InlineKeyboardButton(text="🛠 Source Code ", url=f"https://github.com/dihanrandila"),
-        InlineKeyboardButton(
-            text="💾 System Stats", callback_data="stats_callback"
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),
-    ]
 ]
 
 
