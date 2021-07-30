@@ -124,16 +124,6 @@ DATA_EXPORT = []
 CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
-IMPORTED = {}
-MIGRATEABLE = []
-HELPABLE = {}
-STATS = []
-USER_INFO = []
-DATA_IMPORT = []
-DATA_EXPORT = []
-CHAT_SETTINGS = {}
-USER_SETTINGS = {}
-
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("Sophia.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
@@ -367,10 +357,18 @@ def Sophia_about_callback(update, context):
     query = update.callback_query
     if query.data == "Sophia_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Sophia*, a powerful group management bot built to help you manage your group easily..
-                 \nMy [💾Repository](https://github.com/Dihanofficial/Sophia).
-                 \n\n  Join My Updates Channel [DihanOfficial] (https://t.me/dihanofficial) 🔥
-                 \n\nI Can Manage Your Groups Smoothly, With Some Special Features [](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
+            text=""" ℹ️ I'm *Sophia*, a powerful group management bot built to help you manage your group easily.
+                 \n❍ I can restrict users.
+                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
+                 \n❍ I have an advanced anti-flood system.
+                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 \n❍ I check for admins' permissions before executing any command and more stuffs
+                 \n\n_Layla's licensed under the GNU General Public License v3.0_
+                 \n❍ Awesome Secret @dihanOfficial
+                 \n❍ Support Group @Dihan_Official
+                 \n❍ Assistant @SophiaX_Support
+                 \nHere is the [💾Repository](https://github.com/dihanofficial/sophia).
                  \n\nIf you have any question about Sophia, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -402,8 +400,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""  I'm *Sophia*
-                 \nHere is the [Source Code](https://github.com/dihanofficial/Sophia) .""",
+            text=""" Hi.. I'm *Sophia*
+                 \nHere is the [Source Code](https://github.comdihanofficial/sophia) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -701,7 +699,7 @@ def main():
             dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive ❤")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to @dihanofficial, go and check!"
+                "Bot isnt able to send message to @dihan_official, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
