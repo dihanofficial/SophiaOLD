@@ -76,42 +76,42 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-Hey there! My name is Sophia.
-I can help manage your groups with useful features, feel free to add me to your Groups!  *Hit /help 
-Sophia Updates @dihanofficial 
-[️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
+Hello, \n I'M Sophia 
+ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ[️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)ɢʀᴏᴜᴘꜱ! ʜɪᴛ /help
+Maintained by @dihanofficial
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="❓ Commands Help ", callback_data="help_back"),
+            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/Sophia?startgroup=true"),
     ],
     [
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="sophia_"),
         InlineKeyboardButton(
-            text="Info & About", callback_data="sophia_"),
-      
-    ],
-    [
-        InlineKeyboardButton(text="🙋‍♀️ Sophia News", url=f"https://t.me/dihanofficial"),
-        InlineKeyboardButton(
-            text="💬 Support Group", url=f"https://t.me/dihan_official"
+            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
+        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/s"),
         InlineKeyboardButton(
-            text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),
+            text="System Stats 💻", callback_data="stats_callback"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ ⛑", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
-[️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg) 
-Hi Boss! I'm Sophia. An anime themed Super Powerful group management bot with many handy tools. So why are you waiting. Let me to assist you. `Powerted By @dihanofficial"""
+`Hi.. I'M`    [️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)
+`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
+Powered by  """
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project Of [Dihan Randila](t.me/dihanrandila) \
- Supporting isnt always financial! [Dihan Official](t.me/dihanofficial) \
+ You can support the project Of [c](t.me/) \
+ Supporting isnt always financial! [dr](t.me/) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -357,7 +357,7 @@ def sophia_about_callback(update, context):
     query = update.callback_query
     if query.data == "sophia_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Hexzy*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *sophia*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -365,17 +365,17 @@ def sophia_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Layla's licensed under the GNU General Public License v3.0_
-                 \n❍ Awesome Secret @HiTechRocket
-                 \n❍ Support Group @HiTechRockets
-                 \n❍ Assistant @HexzyAsistant.
-                 \nHere is the [💾Repository](https://github.com/Prabhasha-p/HexzyBot).
+                 \n❍ Awesome Secret 
+                 \n❍ Support Group 
+                 \n❍ Assistant .
+                 \nHere is the .
                  \n\nIf you have any question about Hexzy, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Home🏘", callback_data="hexzy_back")
+                    InlineKeyboardButton(text="Home🏘", callback_data="sophia_back")
                  ]
                 ]
             ),
@@ -401,7 +401,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..🤗 I'm *Sophia*
-                 \nHere is the [Source Code](https://github.com/dihanofficial/sophia) .""",
+                 \nHere is the [Source Code](https://github.com) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
