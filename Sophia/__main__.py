@@ -413,10 +413,6 @@ def Sophia_about_callback(update, context):
             timeout=60,
         )
 
-   
-
-
-
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
