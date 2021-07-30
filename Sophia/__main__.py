@@ -368,13 +368,6 @@ def help_button(update, context):
 
 
 
-@pbot.on_callback_query(filters.regex("stats_callback"))
-async def stats_callbacc(_, CallbackQuery):
-    text = await bot_sys_stats()
-    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
-    
-    
-
 @run_async
 def Sophia_about_callback(update, context):
     query = update.callback_query
@@ -413,6 +406,10 @@ def Sophia_about_callback(update, context):
             timeout=60,
         )
 
+@pbot.on_callback_query(filters.regex("stats_callback"))
+async def stats_callbacc(_, CallbackQuery):
+    text = await bot_sys_stats()
+    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
