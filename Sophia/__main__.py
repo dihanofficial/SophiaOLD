@@ -367,7 +367,6 @@ def help_button(update, context):
         pass
 
 
-
 @run_async
 def Sophia_about_callback(update, context):
     query = update.callback_query
