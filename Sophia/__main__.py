@@ -418,36 +418,6 @@ def Sophia_about_callback(update, context):
 
 
 
-
-
-@run_async
-def Sophia_info_callback(update, context):
-    query = update.callback_query
-    if query.data == "info_":
-        query.message.edit_text(
-            text=f" I'm *Sophia*, a powerful group management bot built to help you manage your group easily. \n\n  Powerted by @DihanOfficial.* ",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Back", callback_data="Sophia_back")
-                 ]
-                ]
-            ),
-        )
-    elif query.data == "Sophia_back":
-        query.message.edit_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
-        )
-
-
-
-
 @run_async
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
@@ -743,9 +713,7 @@ def main():
     about_callback_handler = CallbackQueryHandler(Sophia_about_callback, pattern=r"Sophia_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
-   info_callback_handler = CallbackQueryHandler(
-        Sophia_info_callback, pattern=r"info_"
-    )
+
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
@@ -755,7 +723,6 @@ def main():
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(source_callback_handler)
-    dispatcher.add_handler(info_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
