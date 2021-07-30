@@ -375,9 +375,6 @@ async def stats_callbacc(_, CallbackQuery):
     
     
 
-
-
-
 @run_async
 def Sophia_about_callback(update, context):
     query = update.callback_query
@@ -385,9 +382,7 @@ def Sophia_about_callback(update, context):
         query.message.edit_text(
             text=""" Info & About
             f"\n\n In here you can find what is Sophia and how to set her up
-
-            f"\n\n Click buttons for help* "
-            
+            f"\n\n Click buttons for help* "  
             f"\n\n [](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -430,17 +425,17 @@ def Sophia_info_callback(update, context):
     query = update.callback_query
     if query.data == "info_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Sophia*, a Powerful Group Management Bot built to Help you manage your group Easily.
+            text=""" I'm *Sophia*, a Powerful Group Management Bot built to Help you manage your group Easily.
 
-                 \n* I can restrict users.
+                 f"\n* I can restrict users.
 
-                 \n* I can greet users with customizable welcome messages and even set a group's rules.
+                 f"\n* I can greet users with customizable welcome messages and even set a group's rules.
 
-                 \n* I have an advanced anti-flood system.
+                 f"\n* I have an advanced anti-flood system.
 
-                 \n* I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 f"\n* I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
 
-                 \n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 f"\n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
 
                  \n* I check for admins' permissions before executing any command and more stuffs
 
