@@ -105,13 +105,10 @@ buttons = [
 
 
 HELP_STRINGS = """
-`*Helpful Commands :* [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
-~ /start: Starts me! You've probably already used this.
-~ /help: Sends this message; I'll tell you more about myself!
-~ /settings: 
-   ∘ in PM: will send you your settings for all supported modules.
-   ∘ in a Group: will redirect you to pm, with all that chat's settings.
-"""
+`Hi.. I'm` 𝗦𝗼𝗽𝗵𝗶𝗮 [️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)
+`Click On The Buttons Below To Get Documentation About Specific Modules..`
+Powered by @dihanofficial """
+
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
  You can support the project Of [Dihan Randila](t.me/dihanrandila) \
@@ -361,7 +358,7 @@ def sophia_about_callback(update, context):
     query = update.callback_query
     if query.data == "sophia_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *sophia*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Sophia*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -369,17 +366,16 @@ def sophia_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Layla's licensed under the GNU General Public License v3.0_
-                 \n❍ Awesome Secret 
-                 \n❍ Support Group 
-                 \n❍ Assistant .
-                 \nHere is the .
-                 \n\nIf you have any question about Hexzy, let us know at .""",
+                 \n❍ Awesome Secret @DihanOfficial
+                 \n❍ Support Group @dihan_official
+                 \n❍ Assistant @SophiaX_Support
+                 \n\nIf you have any question about Sophia, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Home🏘", callback_data="sophia_back")
+                    InlineKeyboardButton(text="Back", callback_data="sophia_back")
                  ]
                 ]
             ),
