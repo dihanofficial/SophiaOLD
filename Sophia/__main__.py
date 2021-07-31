@@ -77,7 +77,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = f"""
 𝐇𝐞𝐥𝐥𝐨, \n I'm 𝗦𝗼𝗽𝗵𝗶𝗮 
-𝙸'𝚖 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚑𝚎𝚕𝚙 𝚢𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜! 𝙷𝚒𝚝 /𝚑𝚎𝚕𝚙 [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
+𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
 Project By @DihanOfficial ❤
 """
 
@@ -105,9 +105,13 @@ buttons = [
 
 
 HELP_STRINGS = """
-`𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲! 𝗠𝘆 𝗻𝗮𝗺𝗲 𝗶𝘀 𝗦𝗼𝗽𝗵𝗶𝗮.`    [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
-Powered by  @dihanofficial"""
+`*Helpful Commands :* [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
+~ /start: Starts me! You've probably already used this.
+~ /help: Sends this message; I'll tell you more about myself!
+~ /settings: 
+   ∘ in PM: will send you your settings for all supported modules.
+   ∘ in a Group: will redirect you to pm, with all that chat's settings.
+"""
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
  You can support the project Of [Dihan Randila](t.me/dihanrandila) \
