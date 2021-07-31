@@ -76,9 +76,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-Hello, \n I'M Sophia 
-ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ[️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)ɢʀᴏᴜᴘꜱ! ʜɪᴛ /help
-Maintained by @dihanofficial
+𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲! 𝗠𝘆 𝗻𝗮𝗺𝗲 𝗶𝘀 𝗦𝗼𝗽𝗵𝗶𝗮.
+𝗜 𝗰𝗮𝗻 𝗵𝗲𝗹𝗽 𝗺𝗮𝗻𝗮𝗴𝗲 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽𝘀 𝘄𝗶𝘁𝗵 𝘂𝘀𝗲𝗳𝘂𝗹 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀, 𝗳𝗲𝗲𝗹 𝗳𝗿𝗲𝗲 𝘁𝗼 𝗮𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀!  *𝗛𝗶𝘁 /𝗵𝗲𝗹𝗽
 """
 
 buttons = [
