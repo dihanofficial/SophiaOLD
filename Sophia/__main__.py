@@ -76,41 +76,42 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-`𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲! 𝗠𝘆 𝗻𝗮𝗺𝗲 𝗶𝘀 𝗦𝗼𝗽𝗵𝗶𝗮.`
-`𝗜 𝗰𝗮𝗻 𝗵𝗲𝗹𝗽 𝗺𝗮𝗻𝗮𝗴𝗲 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽𝘀 𝘄𝗶𝘁𝗵 𝘂𝘀𝗲𝗳𝘂𝗹 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀, 𝗳𝗲𝗲𝗹 𝗳𝗿𝗲𝗲 𝘁𝗼 𝗮𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀!`  *𝗛𝗶𝘁 /𝗵𝗲𝗹𝗽
+𝐇𝐞𝐥𝐥𝐨, \n I'm 𝗦𝗼𝗽𝗵𝗶𝗮 
+𝙸'𝚖 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚑𝚎𝚕𝚙 𝚢𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜! 𝙷𝚒𝚝 /𝚑𝚎𝚕𝚙 [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
+Project By @DihanOfficial ❤
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/Sophia?startgroup=true"),
+            text="➕ Add Sophia to your Group ➕", url="t.me/Sophia?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="sophia_"),
-        InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/s"),
+        InlineKeyboardButton(text="Info & About", callback_data="sophia_"),
         InlineKeyboardButton(
             text="System Stats 💻", callback_data="stats_callback"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ ⛑", callback_data="help_back"),
+        InlineKeyboardButton(text="🙋‍♀️ Sophia News", url=f"https://t.me/dihanofficial"),
+        InlineKeyboardButton(
+            text="💬 Support Group", url=f"https://t.me/dihan_official"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="❓ Commands Help ", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'M`    [️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)
+`𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲! 𝗠𝘆 𝗻𝗮𝗺𝗲 𝗶𝘀 𝗦𝗼𝗽𝗵𝗶𝗮.`    [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
-Powered by  """
+Powered by  @dihanofficial"""
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project Of [c](t.me/) \
- Supporting isnt always financial! [dr](t.me/) \
+ You can support the project Of [Dihan Randila](t.me/dihanrandila) \
+ Supporting isnt always financial! [Dihan Official](t.me/dihanofficial) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
