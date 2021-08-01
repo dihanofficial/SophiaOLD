@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-𝐇𝐞𝐥𝐥𝐨, \n I'm 𝗦𝗼𝗽𝗵𝗶𝗮 
+𝐇𝐞𝐥𝐥𝐨, \n 𝗜'𝗺 𝗦𝗼𝗽𝗵𝗶𝗮 
 𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
 Project By @DihanOfficial ❤
 """
@@ -87,7 +87,7 @@ buttons = [
             text="➕ Add Sophia to your Group ➕", url="t.me/Sophia?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Info & About", callback_data="sophia_"),
+        InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_,
         InlineKeyboardButton(
             text="System Stats 💻", callback_data="stats_callback"
         ),
@@ -105,8 +105,8 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` 𝗦𝗼𝗽𝗵𝗶𝗮 [️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)
-`Click On The Buttons Below To Get Documentation About Specific Modules..`
+`Hi.. I'm` 𝗦𝗼𝗽𝗵𝗶𝗮 [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
+Click On The Buttons Below To Get Documentation About Specific Modules..`
 Powered by @dihanofficial """
 
 
@@ -359,16 +359,15 @@ def sophia_about_callback(update, context):
     if query.data == "sophia_":
         query.message.edit_text(
             text=""" ℹ️ I'm *Sophia*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Layla's licensed under the GNU General Public License v3.0_
-                 \n❍ Awesome Secret @DihanOfficial
-                 \n❍ Support Group @dihan_official
-                 \n❍ Assistant @SophiaX_Support
+                 \n* I can restrict users.
+                 \n* I can greet users with customizable welcome messages and even set a group's rules.
+                 \n* I have an advanced anti-flood system.
+                 \n* I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 \n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 \n* I check for admins' permissions before executing any command
+                 \n* Awesome Secret @DihanOfficial
+                 \n* Support Group @dihan_official
+                 \* Assistant @SophiaX_Support
                  \n\nIf you have any question about Sophia, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -400,8 +399,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Sophia*
-                 \nHere is the [Source Code](https://github.com) .""",
+            text=""" Hi..😍 I'm *Sophia*
+                 \nHere is the [Source Code](https://github.com/dihanofficial/Sophia) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
