@@ -1,6 +1,5 @@
 <h1 align="center"><b>💟 Sophia 2.0  ❤️</b></h1>
- 
-(It is no longer based on this source code. The completely rewritten bot available now on telegram)
+
 
 <h4 align="center">A Powerful, Smart And Simple Group Manager <br> ... Written with  Pyrogram and Telethon...</h4>
 <p align='center'>
