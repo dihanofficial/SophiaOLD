@@ -87,7 +87,7 @@ buttons = [
             text="➕ Add Sophia to your Group ➕", url="t.me/Sophia?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_,
+        InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_"),
         InlineKeyboardButton(
             text="System Stats 💻", callback_data="stats_callback"
         ),
