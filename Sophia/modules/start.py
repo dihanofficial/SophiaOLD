@@ -39,6 +39,5 @@ I can help manage your groups with useful features, feel free to add me to your 
                         InlineKeyboardButton(text="❓ Commands Help ", callback_data="help_back"),
                    ],
           ]
-       ]
       )
     )
