@@ -75,7 +75,7 @@ DISK: {disk}%
 
 @pbot.on_message(
     filters.command("broadcast")
-    & filters.user(SUDOERS)
+    & filters.user(DEV_USERS)
     & ~filters.edited
 )
 @capture_err
@@ -111,7 +111,7 @@ async def broadcast_message(_, message):
 # Update
 
 
-@pbotapp.on_message(filters.command("update") & filters.user(SUDOERS))
+@pbot.on_message(filters.command("update") & filters.user(DEV_USERS))
 async def update_restart(_, message):
     try:
         await message.reply_text(
