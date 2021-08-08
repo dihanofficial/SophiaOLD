@@ -103,4 +103,4 @@ __help__ = """
 • `/spell`*:* while replying to a message, will reply with a grammar corrected version.
 """
 
-__mod_name__ = "English"
+__mod_name__ = "💕English💕"
