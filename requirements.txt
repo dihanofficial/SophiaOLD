@@ -3,6 +3,7 @@ future
 emoji
 lxml
 wget
+PyDictionary
 gtts
 faker
 youtube_dl
