@@ -8,7 +8,7 @@ from pyrogram.types import Message
 from pyrogram.errors import UserAlreadyParticipant
 
 
-from Sophia.conf import DEV_USERS
+from Sophia import DEV_USERS
 
 @Client.on_message(filters.command(["broadcast"]))
 async def broadcast(_, message: Message):
