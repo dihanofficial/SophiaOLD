@@ -348,7 +348,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await hexzy.send_chat_action(message.chat.id, "typing")
+        await Sophia.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
