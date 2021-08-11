@@ -23,10 +23,10 @@ __mod_name__ = "💞Sudoers💞"
 __help__ = """
 *Only for group owner:*
  - /stats - To Check System Status.
- - /gstats - Comming Soon 
- - /gban - Comming Soon 
- - /broadcast - Comming Soon 
- - /update - Comming Soon 
+ - /gstats - Coming Soon 
+ - /gban - Coming Soon 
+ - /broadcast - Coming Soon 
+ - /update - Coming Soon 
 """
 
 
