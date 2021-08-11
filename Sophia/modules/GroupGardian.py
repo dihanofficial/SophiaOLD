@@ -16,7 +16,6 @@ from Sophia import BOT_ID
 # dihanofficial
 from Sophia.Best_Of_Sophia.telethonbasics import is_admin
 from Sophia.events import register
-from Sophia.mongo import mongodb as db
 from Sophia.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
