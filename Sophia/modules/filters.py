@@ -405,7 +405,6 @@ def reply_filter(update, context):
                                 LOGGER.exception(
                                     "Failed to send message: " + excp.message
                                 )
-                                pass
                 else:
                     try:
                         ENUM_FUNC_MAP[filt.file_type](
@@ -460,7 +459,6 @@ def reply_filter(update, context):
                                 )
                             except BadRequest as excp:
                                 LOGGER.exception("Error in filters: " + excp.message)
-                                pass
                         elif excp.message == "Reply message not found":
                             try:
                                 context.bot.send_message(
@@ -472,7 +470,6 @@ def reply_filter(update, context):
                                 )
                             except BadRequest as excp:
                                 LOGGER.exception("Error in filters: " + excp.message)
-                                pass
                         else:
                             try:
                                 send_message(
@@ -481,7 +478,6 @@ def reply_filter(update, context):
                                 )
                             except BadRequest as excp:
                                 LOGGER.exception("Error in filters: " + excp.message)
-                                pass
                             LOGGER.warning(
                                 "Message %s could not be parsed", str(filt.reply)
                             )
@@ -497,7 +493,6 @@ def reply_filter(update, context):
                         send_message(update.effective_message, filt.reply)
                     except BadRequest as excp:
                         LOGGER.exception("Error in filters: " + excp.message)
-                        pass
                 break
 
 
@@ -614,10 +609,9 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
- - /filters*:* List all active filters saved in the chat.
-
+ ✪ /filters*:* List all active filters saved in the chat.
 *Admin only:*
- - /filter <keyword> <reply message>*:* Add a filter to this chat. The bot will now reply that message whenever 'keyword'\
+ ✪ /filter <keyword> <reply message>*:* Add a filter to this chat. The bot will now reply that message whenever 'keyword'\
 is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker. NOTE: all filter \
 keywords are in lowercase. If you want your keyword to be a sentence, use quotes. eg: /filter "hey there" How you \
 doin?
@@ -629,11 +623,11 @@ doin?
  Reply 2
  %%%
  Reply 3`
- - /stop <filter keyword>*:* Stop that filter.
+ ✪ /stop <filter keyword>*:* Stop that filter.
 *Chat creator only:*
- - /removeallfilters*:* Remove all chat filters at once.
+ ✪ /removeallfilters*:* Remove all chat filters at once.
 *Note*: Filters also support markdown formatters like: {first}, {last} etc.. and buttons.
-Check - /markdownhelp to know more!
+Check `/markdownhelp` to know more!
 """
 
 __mod_name__ = "💞Filters💞"
