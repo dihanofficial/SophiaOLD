@@ -1,5 +1,8 @@
 <h1 align="center"><b>✨️ Sophia 2.0 ✨️</b></h1>
 
+### This Repo is Not Working..
+### Dont fork or clone
+
 ## Unmaintained. The new repo of @SophiaSLBot is private. 
 (It is no longer based on this source code. The completely rewritten bot available now on telegram)
 
