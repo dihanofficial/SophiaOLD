@@ -342,27 +342,31 @@ def goodmorning(update, context):
     message = update.effective_message
     reply = random.choice(fun.GDMORNING)
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+
+
+@run_async
+@typing_action
+def sophia(update, context):
+    message = update.effective_message
+    reply = random.choice(fun.SOPHIA)
+    message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
     
 
-
-
-
-
 __help__ = """
- - /runs*:* reply a random string from an array of replies
- - /slap*:* slap a user, or get slapped if not a reply
- - /shrug*:* get shrug XD
- - /table*:* get flip/unflip :v
- - /decide*:* Randomly answers yes/no/maybe
- - /toss*:* Tosses A coin
- - /bluetext*:* check urself :V
- - /roll*:* Roll a dice
- - /rlg*:* Join ears,nose,mouth and create an emo ;-;
- - /shout <keyword>*:* write anything you want to give loud shout
- - /weebify <text>*:* returns a weebified text
- - /sanitize*:* always use this before /pat or any contact
- - /pat*:* pats a user, or get patted
- - /8ball*:* predicts using 8ball method 
+ ❍ /runs*:* reply a random string from an array of replies
+ ❍ /slap*:* slap a user, or get slapped if not a reply
+ ❍ /shrug*:* get shrug XD
+ ❍ /table*:* get flip/unflip :v
+ ❍ /decide*:* Randomly answers yes/no/maybe
+ ❍ /toss*:* Tosses A coin
+ ❍ /bluetext*:* check urself :V
+ ❍ /roll*:* Roll a dice
+ ❍ /rlg*:* Join ears,nose,mouth and create an emo ;-;
+ ❍ /shout <keyword>*:* write anything you want to give loud shout
+ ❍ /weebify <text>*:* returns a weebified text
+ ❍ /sanitize*:* always use this before /pat or any contact
+ ❍ /pat*:* pats a user, or get patted
+ ❍ /8ball*:* predicts using 8ball method 
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
@@ -385,6 +389,9 @@ GDMORNING_HANDLER = DisableAbleMessageHandler(
 GDNIGHT_HANDLER = DisableAbleMessageHandler(
     Filters.regex(r"(?i)(gn|good night)"), goodnight, friendly="goodnight"
 )
+SOPHIA_HANDLER = DisableAbleMessageHandler(
+    Filters.regex(r"(?i)(sophi|sophia)"), sophia, friendly="sophia"
+)
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
@@ -402,6 +409,7 @@ dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 dispatcher.add_handler(GDMORNING_HANDLER)
 dispatcher.add_handler(GDNIGHT_HANDLER)
+dispatcher.add_handler(SOPHIA_HANDLER)
 
 __mod_name__ = "💞Memes💞"
 __command_list__ = [
@@ -437,4 +445,5 @@ __handlers__ = [
     EIGHTBALL_HANDLER,
     GDMORNING_HANDLER,
     GDNIGHT_HANDLER,
+    SOPHIA_HANDLER,
 ]
