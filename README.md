@@ -10,8 +10,7 @@
   <a href="https://github.com/dihanofficial/sophia/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /> </a>
 </p>
 
-<p align="center"><a href="https://t.me/Dihan_Official"><img src="https://telegra.ph/file/2767f9592cb8e7d462dd0.png" width="400"></a></p>
-<p align="center">
+
     
 > ⭐️ Thanks to everyone who starred Sophia, That is the greatest pleasure we have !
 
