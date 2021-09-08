@@ -1,8 +1,9 @@
-<h1 align="center"><b>✨️ Sophia 2.1 ✨️</b></h1>
+<h1 align="center"><b>✨️ Sophia 0.1 ✨️</b></h1>
 
 
-## Unmaintained. The new repo of @SophiaSLBot is private. 
-(It is no longer based on this source code. The completely rewritten bot available now on telegram)
+
+## [Go to New @Sophiaslbot Source Code 💫 ](https://github.com/dihanofficial/sophia)
+
 
 <h4 align="center">A Powerful, Smart And Simple Group Manager <br> ... Written with  Pyrogram and Telethon...</h4>
 <p align='center'>
@@ -20,7 +21,7 @@
 
 
 # 🏃‍♂️ Easy Deploy 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dihanofficial/Sophia.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dihanofficial/Sophia-v1.git)
 
 
 
