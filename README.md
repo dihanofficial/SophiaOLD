@@ -1,7 +1,6 @@
 <h1 align="center"><b>✨️ Sophia 0.1 ✨️</b></h1>
 
 
-# Dont Fork 
  
 
 
