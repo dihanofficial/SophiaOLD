@@ -1,4 +1,4 @@
-<h1 align="center"><b>✨️ Sophia 0.1 ✨️</b></h1>
+<h1 align="center"><b>✨️ Sophia 2.0✨️</b></h1>
 
 
  
