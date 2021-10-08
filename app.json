@@ -1,8 +1,7 @@
-  
 {
       "name": "Sophia",
       "description": "Telegram group management bot.",
-      "logo": "https://telegra.ph/file/821d3e03f45048f038a6e.jpg",
+      "logo": "https://telegra.ph/file/64425218fa3fdbfd3dc5e.jpg",
       "keywords": [
          "telegram",
          "anime",
@@ -10,7 +9,7 @@
          "manager",
          "Sophia"
       ],   
-   "repository": "https://github.com/dihanofficial/sophia",
+   "repository": "https://github.com/dihanofficial/SophiaBot",
    "addons": [
       {
          "options": {
@@ -51,7 +50,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": ""
+         "value": "1725052009"
       },
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
@@ -68,12 +67,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "Dihanrandila"
+         "value": "dihanrandila"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "Dihan_Official"
+         "value": "SophiaSupport_Official"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -183,7 +182,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/dihanofficial"
+         "value": "https://t.me/SophiaSupport_Official"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -193,7 +192,17 @@
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
          "required": false,
          "value": ""
-   },      
+      }, 
+      "ARQ_API_URL": {
+         "description": "Defult -> https://thearq.tech/",
+         "required": true,
+         "value": "https://thearq.tech/"
+      },
+      "ARQ_API_KEY": {
+         "description": "Start this boat https://t.me/ARQRobot. Get the key ",
+         "required": true,
+         "value": ""
+      },             
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
@@ -203,7 +212,13 @@
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
          "required": false,
          "value": ""
+      },             
+      "REM_BG_API_KEY": {
+         "description": "",
+         "required": false,
+         "value": ""
       }
-      
+
+
    }
 }
