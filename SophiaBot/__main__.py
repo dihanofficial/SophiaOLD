@@ -25,8 +25,6 @@ from SophiaBot import (
     updater,
 )
 
-# needed to dynamically load modules
-# NOTE: Module order is not guaranteed, specify that in the config file!
 from SophiaBot.modules import ALL_MODULES
 from SophiaBot.modules.helper_funcs.chat_status import is_user_admin
 from SophiaBot.modules.helper_funcs.misc import paginate_modules
@@ -357,12 +355,10 @@ def sophia_about_callback(update, context):
         query.message.edit_text(
             text=""" My name is *Sophia*, I have been written with Pyrogram and Telethon.. I'm online since 10 June 2021 and is constantly updated!
 *Bot Version: 3.0*
-
-*Bot Developers:*
+\n*Bot Developers:*
 -  @dihanrandila
 -  @InukaASiTH
-
-* Updates Channel:* @SophiaUpdates
+\n* Updates Channel:* @SophiaUpdates
 * Support Chat:* @SophiaSupport_Official
                  \n\n* And finally special thanks of gratitude to all my users who relied on me for managing their groups, I hope you will always like me; My developers are constantly working to improve me!
                  \n\n *Licensed under the GNU Affero General Public Lisence v3.0*
@@ -501,9 +497,6 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                    InlineKeyboardButton(text="⚔ Bot Configuration Tutorial ⚔", callback_data="sophia_bothelp"),
-                  ],
-                  [
                     InlineKeyboardButton(text="🙋‍♀️ About Me", callback_data="sophia_"),
                     InlineKeyboardButton(text="❓ Basic Help", callback_data="sophia_basichelp"),
                   ],
@@ -512,7 +505,7 @@ def Source_about_callback(update, context):
                     InlineKeyboardButton(text="Terms And Conditions 📄 ", url=f"https://telegra.ph/Terms-and-Conditions-08-21"),
                   ],
                   [
-                    InlineKeyboardButton(text="💾 Source Code", url=f"https://github.com/dihanofficial"),
+                    InlineKeyboardButton(text="💾 Source Code", url=f"https://github.com/dihanofficial/SophiaBot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="source_back")
@@ -531,20 +524,7 @@ def Source_about_callback(update, context):
         )
 
 
-
-
-
-       
-
-
-
-
-
-
-
-
-     
-
+# Speacial creadit for me  dont edit 
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
@@ -821,10 +801,10 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now!💫 ")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! 💫 ")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to @dihan_official, go and check!"
+                "Bot isnt able to send message to @SophiaSupport_Official, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
