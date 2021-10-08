@@ -22,8 +22,11 @@ import json
 import requests
 from PyDictionary import PyDictionary
 from telethon import *
+import re
+import aiohttp
 
-
+from asyncio import gather, get_event_loop, sleep
+from SophiaBot import  pbot as Sophia
 
 from telethon.tl.types import *
 
@@ -95,6 +98,15 @@ async def _(event):
     net = jet.replace("}", "")
     got = net.replace("'", "")
     await event.reply(got)
+
+
+@Sophia.on_message(filters.command("repo") & ~filters.edited)
+async def repo(_, message):
+    await message.reply_text(
+        "[GitHub](https://github.com/dihanofficial/SophiaBot)"
+        + " | [Sophia Updates](t.me/sophiaupdates)",
+        disable_web_page_preview=True,
+    )
 
 
 __help__ = """
