@@ -1,8 +1,6 @@
 <h1 align="center"><b>✨️ Sophia 2.0✨️</b></h1>
 
 
- 
-
 
 ## Avaiilable on Telegram as [@SophiaSLBot](https://t.me/sophiaslbot)
 
