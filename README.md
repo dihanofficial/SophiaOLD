@@ -71,7 +71,7 @@ $ python3 -m SophiaBot
 
 ## Special Credits
 
-- [Daisy](https://github.com/teamdaisyx/daisyx)
+- [DaisyX](https://github.com/teamdaisyx/daisyx)
 - [TroJanzHEX](https://github.com/TroJanzHEX)
 - [infotechbro](https://github.com/infotechbro/)
 - [Thehamkercat](https://github.com/thehamkercat)
