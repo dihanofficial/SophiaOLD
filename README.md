@@ -18,7 +18,7 @@
 </p>
 
 
-> <b> ⭐️ Thanks to everyone who starred Sophia, That is the greatest pleasure we have ! </b> 
+ <b> ⭐️ Thanks to everyone who starred Sophia, That is the greatest pleasure we have ! </b> 
 
 
 
