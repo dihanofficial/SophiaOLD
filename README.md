@@ -32,11 +32,11 @@
 
 
 
-# ❤️ Support
+# Join my Updates Channel & Support Chats
 <a href="https://t.me/SophiaSUPPort_official"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="https://t.me/SophiaUpdates"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
-### Self-hosting (For Devs) ⚔
+### Self-hosting (For Devs) 
 ```sh
 # Install Git First (apt-instll git)
 $ git clone https://github.com/DihanOfficial/Sophiabot
@@ -50,7 +50,7 @@ $ pip3 install -r requirements.txt
 $ python3 -m SophiaBot
 ```
 
-### Mandatory Vars 📒
+### Mandatory Vars 
 ```
 [+] Make Sure You Add All These Mandatory Vars. 
     [-] APP_ID:   You can get this value from https://my.telegram.org
@@ -60,6 +60,26 @@ $ python3 -m SophiaBot
     [-] DATABASE_URL: from elephantsql.com
     [-] OWNER_ID: ur id
     [-] MONGO_PORT: 27017
-    [-] MONGO_DB': 'Sophia'
+    [-] MONGO_DB': 'SophiaBot'
 [+] The Sophia won't run without setting the mandatory vars.
 ```
+
+#### Contributors
+- [Dihan Randila](https://github.com/dihanofficial): Dev / Owner
+- [InukaAsith](https://github.com/InukaAsith): Dev 
+- [Deshadeeth Thisarana](https://github.com/Deshadeeth-Thisarana) 
+
+## Special Credits
+
+- [Daisy](https://github.com/teamdaisyx/daisyx)
+- [TroJanzHEX](https://github.com/TroJanzHEX)
+- [infotechbro](https://github.com/infotechbro/)
+- [Thehamkercat](https://github.com/thehamkercat)
+- [FridayUserbot](https://github.com/DevsExpo/FridayUserbot)
+- [MissJuliaRobot](https://github.com/MissJuliaRobot/MissJuliaRobot)
+- [ADV-Auto-Filter-Bot-V2](https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2)
+- [Image-Editor](https://github.com/TroJanzHEX/Image-Editor/)
+- [WilliamButcherBot](https://github.com/thehamkercat/WilliamButcherBot)
+- [Mr-Dark-Prince](https://github.com/Mr-Dark-Prince/)
+- [Im-Janindu](https://github.com/imjanindu)
+
