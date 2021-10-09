@@ -32,7 +32,7 @@
 
 
 
-# Join my Updates Channel & Support Chats
+## Join my Updates Channel & Support Chats
 <a href="https://t.me/SophiaSUPPort_official"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="https://t.me/SophiaUpdates"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
