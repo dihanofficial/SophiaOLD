@@ -68,6 +68,7 @@ $ python3 -m SophiaBot
 - [Dihan Randila](https://github.com/dihanofficial): Dev / Owner
 - [InukaAsith](https://github.com/InukaAsith): Dev 
 - [Deshadeeth Thisarana](https://github.com/Deshadeeth-Thisarana) 
+- [Percy Official](https://github.com/PercyOfficial)
 
 ## Special Credits
 
