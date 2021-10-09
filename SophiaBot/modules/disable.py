@@ -25,7 +25,7 @@ if is_module_loaded(FILENAME):
         is_user_admin,
         user_admin,
     )
-    from Sophia.modules.sql import disable_sql as sql
+    from SophiaBot.modules.sql import disable_sql as sql
     from telegram.ext.dispatcher import run_async
 
     DISABLE_CMDS = []
