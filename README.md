@@ -1,6 +1,6 @@
 <h1 align="center"><b> ❤️ Sophia 2.0  ❤️ OLD</b></h1>
 
-<h1 align="center">[Go to New Source Code](https://github.com/dihanofficial/sophiabot)</h1>
+<h1 align="center">Go to New Source Code https://github.com/dihanofficial/sophiabot</h1>
  
 <h4 align="center">A Powerful, Smart And Simple Group Manager <br> ... Written with  Pyrogram and Telethon...</h4>
 <p align='center'>
