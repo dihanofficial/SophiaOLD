@@ -1,4 +1,3 @@
-# We're using Debian Slim Buster image
 FROM python:3.8.5-slim-buster
 
 ENV PIP_NO_CACHE_DIR 1
@@ -65,11 +64,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/Sophia
-RUN git clone -b shiken https://github.com/dihanofficial/sophiaBot /root/SophiaBot
-WORKDIR /root/SophiaBot
+RUN git clone -b shiken https://github.com/dihanrandila1/Sophia /root/Sophia
+WORKDIR /root/Sophia
 
 #Copy config file to /root/Sophia/Sophia
-COPY ./SophiaBot/sample_config.py ./SophiaBot/config.py* /root/SophiaBot/SophiaBot/
+COPY ./Sophia/sample_config.py ./Sophia/config.py* /root/Sophia/Sophia/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +76,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","SophiaBot"]
+CMD ["python3","-m","Sophia"]

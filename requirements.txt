@@ -1,13 +1,10 @@
-cloudmersive_virus_api_client
-PyDictionary
+
 future
 emoji
 lxml
 wget
 gtts
 faker
-python-barcode==0.13.1
-python-rapidjson==0.9.3
 youtube_dl
 beautifulsoup4
 requests==2.20.0
@@ -80,4 +77,3 @@ cloudscraper
 glitch_this
 NumPy
 opencv-python-headless
-googletrans==3.1.0a0

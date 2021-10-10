@@ -1,4 +1,4 @@
 @echo off
-TITLE SophiaBot
+TITLE Sophia
 :: Enables virtual env mode and then starts Rika
-env\scripts\activate.bat && py -m SophiaBot
+env\scripts\activate.bat && py -m Sophia
